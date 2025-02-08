@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    build: crisywini/wardrobe-wizard-api:v1.0.1
+    image: crisywini/wardrobe-wizard-api:latest
     ports:
       - "5000:5000"
     depends_on:
