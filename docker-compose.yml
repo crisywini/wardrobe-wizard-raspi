@@ -18,5 +18,13 @@ services:
     volumes:
       - mongo_data:/data/db
 
+  frontend: 
+    image: crisywini/the-wardrobe-grimmerie:v1.1.0
+    ports:
+      - "8080:80"
+    depends_on:
+      - app
+
+
 volumes:
   mongo_data:
